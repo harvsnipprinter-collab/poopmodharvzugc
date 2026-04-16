@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "poopmod",
+  "version": "${version}",
+  "name": "Poop Trader",
+  "description": "Drop a spider eye, get random loot, get farted on",
+  "authors": [
+    "you"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.poop.PoopMod"
+    ],
+    "client": [
+      "com.example.poop.PoopClient"
+    ]
+  },
+  "mixins": [
+    "poopmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  }
+}
